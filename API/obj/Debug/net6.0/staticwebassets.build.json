@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "xJiA3EHta7631xcK9Wvyv5dHOx2yrhjlz010Oq6cckE=",
-  "Source": "SimpleFin",
-  "BasePath": "_content/SimpleFin",
+  "Hash": "bUm1vPqwZHJejLhtNIB7WgmMI8ngxypkYrDApg4MvgQ=",
+  "Source": "API",
+  "BasePath": "_content/API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
