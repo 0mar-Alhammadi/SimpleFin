@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using SimpleFin.Requests;
 
@@ -11,7 +12,7 @@ public class TransactionsController : Controller
     //[Route("all")]
     public IActionResult Index()
     {
-        return NotFound();
+        return Ok(JsonSerializer.Serialize(new object()));
     }
     
     [HttpPost]

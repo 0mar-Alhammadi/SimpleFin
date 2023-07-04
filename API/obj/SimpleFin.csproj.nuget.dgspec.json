@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/Users/omar.alhammadi/RiderProjects/SimpleFin/SimpleFin/SimpleFin.csproj": {}
+    "/Users/saleem.hadad/code/talabat/SimpleFin/SimpleFin/SimpleFin.csproj": {}
   },
   "projects": {
-    "/Users/omar.alhammadi/RiderProjects/SimpleFin/SimpleFin/SimpleFin.csproj": {
+    "/Users/saleem.hadad/code/talabat/SimpleFin/SimpleFin/SimpleFin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/omar.alhammadi/RiderProjects/SimpleFin/SimpleFin/SimpleFin.csproj",
+        "projectUniqueName": "/Users/saleem.hadad/code/talabat/SimpleFin/SimpleFin/SimpleFin.csproj",
         "projectName": "SimpleFin",
-        "projectPath": "/Users/omar.alhammadi/RiderProjects/SimpleFin/SimpleFin/SimpleFin.csproj",
-        "packagesPath": "/Users/omar.alhammadi/.nuget/packages/",
-        "outputPath": "/Users/omar.alhammadi/RiderProjects/SimpleFin/SimpleFin/obj/",
+        "projectPath": "/Users/saleem.hadad/code/talabat/SimpleFin/SimpleFin/SimpleFin.csproj",
+        "packagesPath": "/Users/saleem.hadad/.nuget/packages/",
+        "outputPath": "/Users/saleem.hadad/code/talabat/SimpleFin/SimpleFin/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/omar.alhammadi/.nuget/NuGet/NuGet.Config"
+          "/Users/saleem.hadad/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "/Users/saleem.hadad/code/larecipe/larecipe-dotnet/src/out": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/talabat-dhme/index.json": {}
         },
@@ -50,8 +51,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }
