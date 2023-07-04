@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "URUCjcdvBwNNFFgHCupNb/Rn2bh23jCRvWSoh27fcnTA38ZDqeE3b6r1OLLDZMjqZWSKuugqIXFYSaVG0nRDbQ==",
+  "dgSpecHash": "fqnzCO/0oWm9yQ6CwWTA4k5C/f7iliP/gd/cIULsFCvtKxSAf62cwMbL/5K8S7ALo3daPWvIl8lTZCNCSqbXqw==",
   "success": true,
   "projectFilePath": "/Users/saleem.hadad/code/talabat/SimpleFin/API/API.csproj",
   "expectedPackageFiles": [
+    "/Users/saleem.hadad/.nuget/packages/csharpfunctionalextensions/2.39.2/csharpfunctionalextensions.2.39.2.nupkg.sha512",
     "/Users/saleem.hadad/.nuget/packages/mapster/7.3.0/mapster.7.3.0.nupkg.sha512",
     "/Users/saleem.hadad/.nuget/packages/mapster.core/1.2.0/mapster.core.1.2.0.nupkg.sha512",
     "/Users/saleem.hadad/.nuget/packages/mapster.dependencyinjection/1.0.0/mapster.dependencyinjection.1.0.0.nupkg.sha512",

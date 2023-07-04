@@ -1,4 +1,6 @@
 using System.Text.Json;
+using Application.Queries;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using SimpleFin.Requests;
 
@@ -7,12 +9,21 @@ namespace SimpleFin.Controllers;
 [Route("v1/me/[controller]")]
 public class TransactionsController : Controller
 {
-    [HttpGet]
-    //no need to add all when fetching all
-    //[Route("all")]
-    public IActionResult Index()
+    private readonly IMediator _mediator;
+
+    public TransactionsController(IMediator mediator)
     {
-        return Ok(JsonSerializer.Serialize(new object()));
+        _mediator = mediator;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Index()
+    {
+        var query = new GetTransactionsQuery();
+
+        var result = await _mediator.Send(query);
+        
+        return Ok(result);
     }
     
     [HttpPost]
