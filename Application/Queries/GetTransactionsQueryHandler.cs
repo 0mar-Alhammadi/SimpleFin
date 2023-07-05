@@ -6,7 +6,7 @@ public class GetTransactionsQueryHandler: IRequestHandler<GetTransactionsQuery, 
 {
     public Task<GetTransactionsQueryResult> Handle(GetTransactionsQuery request, CancellationToken cancellationToken)
     {
-        var transactions = new List<Transaction>{ new (10, "lulu") };
+        var transactions = new List<Transaction>{ new (1, 10, "lulu") };
         var result = new GetTransactionsQueryResult(transactions);
 
         return Task.FromResult<GetTransactionsQueryResult>(result);

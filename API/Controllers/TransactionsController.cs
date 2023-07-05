@@ -1,8 +1,10 @@
 using System.Text.Json;
 using Application.Queries;
+using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using SimpleFin.Requests;
+using SimpleFin.Responses;
 
 namespace SimpleFin.Controllers;
 [ApiController]
@@ -10,10 +12,12 @@ namespace SimpleFin.Controllers;
 public class TransactionsController : Controller
 {
     private readonly IMediator _mediator;
+    private readonly IMapper _mapper;
 
-    public TransactionsController(IMediator mediator)
+    public TransactionsController(IMediator mediator, IMapper mapper)
     {
         _mediator = mediator;
+        _mapper = mapper;
     }
 
     [HttpGet]
@@ -22,8 +26,10 @@ public class TransactionsController : Controller
         var query = new GetTransactionsQuery();
 
         var result = await _mediator.Send(query);
+
+        var mappedResult = _mapper.Map<TransactionsResponse>(result);
         
-        return Ok(result);
+        return Ok(mappedResult);
     }
     
     [HttpPost]
